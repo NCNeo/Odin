@@ -1,0 +1,132 @@
+/* app/static/css/styles.css */
+
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+}
+.navbar-logo img {
+  height: 40px;
+  margin-right: 1rem;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-left: auto; /* Empuja el menú a la derecha */
+  padding: 0;
+}
+.navbar-menu li {
+  margin: 0 0.5rem;
+}
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.2s;
+}
+.navbar-menu li a:hover {
+  background-color: #444;
+}
+
+/* HERO */
+.hero {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero-logo {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #444;
+}
+
+/* SECCIÓN DE SERVICIOS/SOLUCIONES */
+.services-section {
+  padding: 2rem;
+  text-align: center;
+}
+.services-section h2 {
+  margin-bottom: 1.5rem;
+}
+.services-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+.service-card img {
+  max-height: 60px;
+  margin-bottom: 0.5rem;
+}
+.learn-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+}
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* SECCIÓN "ABOUT" */
+.about-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-section h2 {
+  margin-bottom: 1rem;
+}
+.about-section p {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}

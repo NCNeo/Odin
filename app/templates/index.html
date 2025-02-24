@@ -1,0 +1,65 @@
+<!-- app/templates/index.html -->
+
+{% extends "base.html" %}
+
+{% block title %}
+  Odin | Soluciones de Ciberseguridad
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <!-- Logo a color en la sección de héroe -->
+    <img src="{{ url_for('static', filename='images/odin_logo_color.png') }}"
+         alt="Odin Logo Color"
+         class="hero-logo">
+    <h1>Bienvenido a Proyecto Odin</h1>
+    <p>Proveemos soluciones integrales de ciberseguridad: Ethical Hacking, PenTest, EDR, SOCaaS, SIEM, SOAR y mucho más.</p>
+    <a href="#soluciones" class="btn">Conoce nuestras soluciones</a>
+  </div>
+</section>
+
+<!-- Sección de Soluciones (Servicios) -->
+<section id="soluciones" class="services-section">
+  <h2>Nuestras soluciones de Ciberseguridad</h2>
+  <div class="services-grid">
+    <!-- Cada "card" representa una solución. Ajusta la imagen al ícono que tengas -->
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_edr.png') }}" alt="Icono EDR">
+      <h3>EDR</h3>
+      <p>Protección avanzada de endpoints con respuesta en tiempo real.</p>
+      <a href="#" class="learn-more">Leer más</a>
+    </div>
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_soc.png') }}" alt="Icono SOC">
+      <h3>SOCaaS</h3>
+      <p>Servicio de Operaciones de Seguridad administradas 24/7.</p>
+      <a href="#" class="learn-more">Leer más</a>
+    </div>
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/icon_pentest.png') }}" alt="Icono Pentest">
+      <h3>PenTest</h3>
+      <p>Pruebas de penetración para evaluar y fortalecer tu infraestructura.</p>
+      <a href="#" class="learn-more">Leer más</a>
+    </div>
+    <!-- Agrega más tarjetas para SIEM, SOAR, OSINT, etc. -->
+  </div>
+</section>
+
+<!-- Sección "Acerca de Odin" -->
+<section class="about-section">
+  <h2>¿Por qué elegir Proyecto Odin?</h2>
+  <p>
+    Somos un equipo de expertos dedicados a la ciberseguridad.
+    Nuestra plataforma ofrece herramientas de investigación en la deepweb y dark web,
+    sistemas de automatización de respuesta, y mucho más.
+  </p>
+  <p>
+    Con Odin, puedes asegurar tus activos críticos, monitorear amenazas en tiempo real
+    y responder de forma rápida y eficiente a cualquier incidente de seguridad.
+  </p>
+</section>
+
+{% endblock %}
